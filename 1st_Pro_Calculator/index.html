@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+   
+</head>
+<body>
+   <div class=" calculator">
+       <div class="Cal-Button">
+
+             <input type="text" id="input" >
+             <input type="text" id="input2" disabled>
+            
+           
+             <button class="btn" onclick = "clearDisplay()" > C </button>
+
+             <Button class="btn" onclick = " appendOperation('(')" >( </Button>
+             <Button class="btn" onclick = " appendOperation(')')" > )</Button>
+             <Button class="btn" onclick = " appendOperation( '%' )" > %</Button>
+             <Button class="btn" onclick = " appendOperation( '/' )" > / </Button>
+             <Button class="btn" onclick = " appendOperation( '7' )" >7</Button>
+             <Button class="btn" onclick = " appendOperation( '8' )" >8</Button>
+             <Button class="btn" onclick = " appendOperation( '9' )" >9</Button>
+             <Button class="btn" onclick = " appendOperation( '*' )" >x</Button>
+             <Button class="btn" onclick = " appendOperation( '4' )" >4</Button>
+             <Button class="btn" onclick = " appendOperation( '5' )" >5</Button>
+             <Button class="btn" onclick = " appendOperation( '6' )" >6</Button>
+             <Button class="btn" onclick = " appendOperation( '-' )" >-</Button>
+             <Button class="btn" onclick = " appendOperation( '1' )" >1</Button>
+             <Button class="btn" onclick = " appendOperation( '2' )" >2</Button>
+             <Button class="btn" onclick = " appendOperation( '3' )" >3</Button>
+             <Button class="btn" onclick = " appendOperation( '+' )" >+</Button>
+             <Button class="btn" onclick = " appendOperation( '0' )" >0</Button>
+             <Button class="btn" onclick = " appendOperation( '.' )" >.</Button>
+             <Button class="btn" onclick="result()"> = </Button>
+
+       </div>
+
+   </div>
+           
+        
+</body>
+</html>
