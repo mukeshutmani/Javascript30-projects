@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    box-sizing: 0;  
+  
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.container{
+    background-color: rgb(239, 239, 243);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(93, 90, 50, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+    text-align: center;
+    width: 200px;
+    height: 120px;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+   
+}
+
+.star{
+    font-size: 2em;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ;
+}
+
+.star:hover{
+    color: rgb(242, 207, 6);
+}
+
+.star:active{
+    color: rgb(242, 242, 72);
+}
+
+p{
+ font-size: 1.1em;
+ margin-top: 2px;
+}
+
+.star.selected {
+    color: rgb(242, 207, 6);
+}
+
+
