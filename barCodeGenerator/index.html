@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+
+</head>
+<body style="background-color: #fff;">
+    <div class="container">
+        <div class="box">
+            <h1>Barcode Generator</h1>
+
+            <input type="text" id="barcode-input" placeholder="Enter text for barcode">
+            <select id="barcodeFormat">
+                <option value="CODE128">CODE128</option>
+                <option value="EAN13">EAN13</option>
+                <option value="UPC">UPC</option>
+                <option value="EAN8">EAN8</option>
+                <option value="CODE39">CODE39</option>
+                <option value="ITF">ITF</option>
+                <option value="MSI">MSI</option>
+                <option value="pharmacode">pharmacode</option>
+            </select>
+
+            <button onclick="GenerateBarcode()" >Barcode Generator</button>
+        </div>
+        <svg id="barcode"> </svg>
+    </div>
+
+    
+    
+</body>
+</html>
