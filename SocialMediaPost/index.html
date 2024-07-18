@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social media post</title>
+
+     <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+
+</head>
+<body>
+     
+ 
+ 
+<div class="container">
+  <h1> TechPedia </h1>
+  <form id="postForm">
+    <img id="profile" src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="50px" height="50px">
+    <h3 style="margin-top: 10px;">Rutika Agarwal </h3>
+    <h4>Software Engineer @google👩‍💻 </h4>
+      <textarea id="text" placeholder="Create Your Post" required></textarea>
+      <input type="file" id="image" multiple>
+      <button type="button" onclick="uploadPost()"> Upload Post</button> 
+    </form>
+    <div class="postStore">
+        <div id="postsContainer">
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    background-color:  #000000;
+
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.container{
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: #161617;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    width: 50%;
+    color: #fff;
+    
+}
+
+
+h1,h2{
+    color: #ffffff;
+    margin-top: 5px;
+    text-align: center;
+}
+
+form {
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+   margin-left: 2%;
+   border: 1px solid #fff;
+
+}
+
+input[type = 'file'] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 60%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+    
+}
+
+
+#text{
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(200, 191, 191);
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+button {
+    padding: 10px 15px;
+    background: #0a0c0e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+   
+}
+
+button:hover {
+    background: #272b2e;
+}
+
+#editButton{
+ border-radius: 5px;
+ font-size: 15px;
+ padding: 5px 10px;
+ margin-bottom: 10px;
+}
+
+
+.postStore{
+    background-color: #000000;
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 2%;
+    border-radius: 5px;
+    padding: 20px;
+    /* display: none; */
+   visibility: hidden;
+    
+
+}
+
+#postsContainer{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+p {
+   
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+textarea {
+    background-color: #0a0c0e;
+    color: #ddd;
+    margin-top: 10px;
+    padding: 10px;
+    width: calc(100% - 22px); /* Adjust for padding */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+#img{
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    width: 550px;
+    height: 320px;
+    object-fit: cover;
+    margin-top: 10px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+#like-button{
+    /* background-color: #f0ebeb; */
+    font-size: 25px;
+}
+
+
+.comments p{
+    font-size: 20px;
+}
+
+#profile{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 1px;
+    gap: 10px;
+}
