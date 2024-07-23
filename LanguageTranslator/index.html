@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <script  src="script.js" defer ></script>
+    <script src="countres.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: rgb(106, 106, 235);
+        }
+        #translator {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 10px;
+
+
+
+        }
+        textarea {
+            width: 45%;
+            height: 140px;
+            /* margin-bottom: 10px; */
+            margin-left: -8px;
+            border: 1px solid #393434;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: #f7f2f2;
+            outline: none;
+            
+        }
+        select{
+            width: 46%;
+            padding: 10px;
+            margin-left: -8px;
+            margin-top: -6px;
+            
+            border: 1px solid #393434;
+        }
+
+        button {
+            /* margin-top: -1px; */
+            width: 92%;
+            padding: 10px;
+            margin-bottom: 40px;
+            margin-left: -4px;
+            border: 1px solid #393434;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background: #5372F0;
+            font-weight:650;
+           
+
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="translator">
+        <h1>Language Translator</h1>
+        <textarea class="from-text" placeholder="Enter text..."></textarea>
+        <textarea class="to-text" placeholder="Translation" readonly></textarea>
+        <select id="from-lang"></select>
+        <select id="to-lang"></select>
+        <button>Translate</button>
+    </div>
+   
+</body>
+</html>
