@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     body.light-mode {
+        background-color: #ffffff;
+        color: #000000;
+     }
+
+     body.dark-mode {
+        background-color: #000000;
+        color: #ffffff;
+     }
+
+     .switch{
+        position: relative;
+        display: inline-block;
+        width: 70px;
+        height: 34px;
+        margin: 100px;
+        
+     }
+
+     .switch input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+     }
+
+     .slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color: #1c1717;
+       transition: 0.4s;
+       border-radius: 34px;
+       transition: 1s;
+     }
+
+    .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+ 
+input:checked + .slider {
+    background-color: #2d59c0;
+}
+
+input:checked + .slider:before {
+    transform: translateX(36px);
+}
+
+
+    </style>
+</head>
+<body>
+
+   <div class="switch">
+    <input type="checkbox" id="mode-switcher">
+   <label for="mode-switcher" class="slider"></label>
+   </div>
+
+
+    <script >
+
+      // script.js
+
+  const mode = document.getElementById('mode-switcher')
+
+
+  const savedMode = localStorage.getItem('theme')
+ 
+  if(savedMode){
+       document.body.classList.add(savedMode)
+       mode.checked = savedMode === 'dark-mode'
+  } else{
+    document.body.classList.add('light-mode')
+  }
+
+
+  mode.addEventListener('change', ()=> {
+        if(mode.checked) {
+          document.body.classList.replace('light-mode', 'dark-mode');
+          localStorage.setItem('theme','dark-mode')
+        } else{
+            document.body.classList.replace('dark-mode', 'light-mode');
+            localStorage.setItem('theme','light-mode')
+        }
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+    // const switcher = document.getElementById('mode-switcher');
+
+    // // Check for saved user preference
+    // const savedMode = localStorage.getItem('theme');
+    // if (savedMode) {
+    //     document.body.classList.add(savedMode);
+    //     switcher.checked = savedMode === 'dark-mode';
+    // } else {
+    //     document.body.classList.add('light-mode'); // Default to light mode
+    // }
+
+    // switcher.addEventListener('change', () => {
+    //     if (switcher.checked) {
+    //         document.body.classList.replace('light-mode', 'dark-mode');
+    //         localStorage.setItem('theme', 'dark-mode');
+    //     } else {
+    //         document.body.classList.replace('dark-mode', 'light-mode');
+    //         localStorage.setItem('theme', 'light-mode');
+    //     }
+    // });
+
+
+    </script>
+</body>
+</html>
